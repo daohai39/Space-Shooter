@@ -36,7 +36,7 @@ public class EnemyManager
     public Enemy GetEnemy(int id) {
         for (int i = 0; i < _enemies.Count; i++)
         {
-            if (_enemies[i].id == id) {
+            if (_enemies[i].Id == id) {
                 return _enemies[i];
             }
         }
@@ -46,6 +46,7 @@ public class EnemyManager
 
     public void DestroyEnemy(int id) {
         Enemy enemyNeedToDestroy = GetEnemy(id);
+        if (enemyNeedToDestroy == null) return;
         _enemies.Remove(enemyNeedToDestroy);
         Debug.Log("Enemy remove from game: " + enemyNeedToDestroy.name); 
         enemyNeedToDestroy.DestroySelf();

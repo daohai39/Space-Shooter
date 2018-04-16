@@ -7,7 +7,7 @@ public class Hazard : Enemy
 
     private void Start()
     {
-        var gameControllerObject = GameObject.FindWithTag("GameController");
+        var gameControllerObject = GameObject.FindWithTag(Tag.GameController);
         if (gameControllerObject != null)
             _gameController = gameControllerObject.GetComponent<GameController>();
         if (_gameController == null)
