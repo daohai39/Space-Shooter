@@ -19,26 +19,29 @@ public class EnemyBolt : Bolt, IDestroyOnContact
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag(Tag.Boundary)
+            || other.CompareTag(Tag.Enemy)
+            || other.CompareTag(Tag.PlayerBolt))
+            return;
+        DestroySelf();
+
         Destroy(other);
     }
 
     public void Destroy(Collider other)
     {
-        if (other.CompareTag(Tag.Boundary) 
-            || other.CompareTag(Tag.Enemy) 
-            || other.CompareTag(Tag.PlayerBolt))
-            return;
-        if (other.CompareTag(Tag.Player))
+        Player player = other.GetComponent<PlayerController>();
+        if (player!=null)
         {
             _gameController.ReducePower();
             _gameController.ReduceHealth();
             if (_gameController.IsGameOver())
             {
                 Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
-                Destroy(other.gameObject);
+//                Destroy(other.gameObject);
+                player.DestroySelf();
                 _gameController.GameOver();
             }
         }
-        Destroy(gameObject);
     }
 }
