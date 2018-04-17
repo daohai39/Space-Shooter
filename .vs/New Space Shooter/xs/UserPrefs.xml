@@ -1,18 +1,13 @@
 ﻿<Properties StartupConfiguration="{D3C512D6-1383-565D-E8D9-88A53AF28C6E}|">
   <MonoDevelop.Ide.ItemProperties.New_220Space_220Shooter PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Assets/Scripts/DestroyOnExit.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Assets/Scripts/Core/EnemyShip.cs">
     <Files>
-      <File FileName="Assets/Assets/Scripts/GameController.cs" Line="81" Column="47" />
-      <File FileName="../Space Shooter/Assets/Scripts/GameController.cs" Line="139" Column="1" />
-      <File FileName="../Space Shooter/Assets/Scripts/DestroyByContact.cs" Line="1" Column="1" />
-      <File FileName="Assets/Assets/Scripts/Enemy.cs" Line="42" Column="6" />
-      <File FileName="Assets/Assets/Scripts/EnemyBolt.cs" Line="37" Column="37" />
-      <File FileName="Assets/Assets/Scripts/PlayerBolt.cs" Line="1" Column="1" />
-      <File FileName="Assets/Assets/Scripts/Bolt.cs" Line="1" Column="1" />
-      <File FileName="Assets/Assets/Scripts/DestroyOnExit.cs" Line="27" Column="62" />
-      <File FileName="Assets/Assets/Scripts/PlayerController.cs" Line="23" Column="29" NotebookId="1" />
-      <File FileName="Assets/Assets/Scripts/BoltManager.cs" Line="6" Column="22" NotebookId="1" />
-      <File FileName="Assets/Assets/Scripts/EnemyManager.cs" Line="47" Column="39" NotebookId="1" />
+      <File FileName="Assets/Assets/Scripts/Controller/GameController.cs" Line="20" Column="28" />
+      <File FileName="Assets/Assets/Scripts/Controller/PlayerController.cs" Line="87" Column="37" />
+      <File FileName="Assets/Assets/Scripts/Core/Save.cs" Line="8" Column="25" />
+      <File FileName="Assets/Assets/Scripts/Core/Bolt.cs" Line="11" Column="3" />
+      <File FileName="Assets/Assets/Scripts/Core/EnemyShip.cs" Line="18" Column="3" />
+      <File FileName="../../../Downloads/BattleSave - Starter/Assets/Scripts/Game.cs" Line="75" Column="23" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

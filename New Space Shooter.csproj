@@ -106,12 +106,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Assets\Scripts\DestroyOnContact.cs" />
-    <Compile Include="Assets\Assets\Scripts\DestroyOnCreate.cs" />
-    <Compile Include="Assets\Assets\Scripts\DestroyOnExit.cs" />
-    <Compile Include="Assets\Assets\Scripts\GameController.cs" />
-    <Compile Include="Assets\Assets\Scripts\Mover.cs" />
-    <Compile Include="Assets\Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Assets\Scripts\Core\Bolt.cs" />
+    <Compile Include="Assets\Assets\Scripts\Managers\BoltManager.cs" />
+    <Compile Include="Assets\Assets\Scripts\Components\DestroyOnCreate.cs" />
+    <Compile Include="Assets\Assets\Scripts\Components\DestroyOnExit.cs" />
+    <Compile Include="Assets\Assets\Scripts\Core\Enemy.cs" />
+    <Compile Include="Assets\Assets\Scripts\Core\EnemyBolt.cs" />
+    <Compile Include="Assets\Assets\Scripts\Managers\EnemyBoltManager.cs" />
+    <Compile Include="Assets\Assets\Scripts\Managers\EnemyManager.cs" />
+    <Compile Include="Assets\Assets\Scripts\Core\EnemyShip.cs" />
+    <Compile Include="Assets\Assets\Scripts\Controller\GameController.cs" />
+    <Compile Include="Assets\Assets\Scripts\Core\Hazard.cs" />
+    <Compile Include="Assets\Assets\Scripts\Components\Mover.cs" />
+    <Compile Include="Assets\Assets\Scripts\Core\PlayerBolt.cs" />
+    <Compile Include="Assets\Assets\Scripts\Managers\PlayerBoltManager.cs" />
+    <Compile Include="Assets\Assets\Scripts\Controller\PlayerController.cs" />
+    <Compile Include="Assets\Assets\Scripts\Helpers\Tag.cs" />
+    <Compile Include="Assets\Assets\Scripts\Helpers\TextHelper.cs" />
     <Compile Include="Assets\Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\_Complete-Game\Scripts\Done_BGScroller.cs" />
     <Compile Include="Assets\_Complete-Game\Scripts\Done_DestroyByBoundary.cs" />
@@ -123,17 +134,9 @@
     <Compile Include="Assets\_Complete-Game\Scripts\Done_PlayerController.cs" />
     <Compile Include="Assets\_Complete-Game\Scripts\Done_RandomRotator.cs" />
     <Compile Include="Assets\_Complete-Game\Scripts\Done_WeaponController.cs" />
-    <Compile Include="Assets\Assets\Scripts\Hazard.cs" />
-    <Compile Include="Assets\Assets\Scripts\IAutoMoveable.cs" />
-    <Compile Include="Assets\Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Assets\Scripts\EnemyShip.cs" />
-    <Compile Include="Assets\Assets\Scripts\EnemyManager.cs" />
-    <Compile Include="Assets\Assets\Scripts\Bolt.cs" />
-    <Compile Include="Assets\Assets\Scripts\BoltManager.cs" />
-    <Compile Include="Assets\Assets\Scripts\PlayerBolt.cs" />
-    <Compile Include="Assets\Assets\Scripts\EnemyBolt.cs" />
-    <Compile Include="Assets\Assets\Scripts\IDestroyOnContact.cs" />
-    <Compile Include="Assets\Assets\Scripts\Tag.cs" />
+    <Compile Include="Assets\Assets\Scripts\Core\Boundary.cs" />
+    <Compile Include="Assets\Assets\Scripts\Core\IDestroyable.cs" />
+    <Compile Include="Assets\Assets\Scripts\Core\Save.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
