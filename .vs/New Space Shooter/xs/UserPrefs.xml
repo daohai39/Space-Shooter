@@ -9,7 +9,7 @@
       <File FileName="Assets/Assets/Scripts/EnemyBolt.cs" Line="37" Column="37" />
       <File FileName="Assets/Assets/Scripts/PlayerBolt.cs" Line="1" Column="1" />
       <File FileName="Assets/Assets/Scripts/Bolt.cs" Line="1" Column="1" />
-      <File FileName="Assets/Assets/Scripts/DestroyOnExit.cs" Line="6" Column="13" />
+      <File FileName="Assets/Assets/Scripts/DestroyOnExit.cs" Line="27" Column="62" />
       <File FileName="Assets/Assets/Scripts/PlayerController.cs" Line="23" Column="29" NotebookId="1" />
       <File FileName="Assets/Assets/Scripts/BoltManager.cs" Line="6" Column="22" NotebookId="1" />
       <File FileName="Assets/Assets/Scripts/EnemyManager.cs" Line="47" Column="39" NotebookId="1" />
